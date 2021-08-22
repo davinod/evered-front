@@ -48,35 +48,49 @@ const Index = () => (
         <h1 className="text-3xl lg:text-5xl font-semibold">Axie Infinity Scholars</h1>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <img src={scholars} />
-
-          {/* <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service One</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Two</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Three</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
-            </Card>
-          </div> */}
         </div>
+
+         <br/>
+         <br/>
+         <p className="mt-8 text-l font-light leading-relaxed text-left">Scholar table for SLP split reference (Total accumulated in 14 days):</p>
+            <br/>
+            <table>
+              <tr>
+                <th>Avg Daily SLP</th>
+                <th>Total SLP</th>
+                <th>Scholar</th>
+                <th>Manager</th>
+              </tr>
+              <tr>
+                <td>140</td>
+                <td>2000 - 2249</td>
+                <td>35%</td>
+                <td>65%</td>
+              </tr>
+              <tr>
+                <td>160</td>
+                <td>2250 - 2499</td>
+                <td>40%</td>
+                <td>60%</td>
+              </tr>
+              <tr>
+                <td>180</td>
+                <td>2500 - 2799</td>
+                <td>45%</td>
+                <td>55%</td>
+              </tr>
+              <tr>
+                <td>200</td>
+                <td>2800 or more</td>
+                <td>50%</td>
+                <td>50%</td>
+              </tr>
+            </table>
+          <br/>
+
+          <p className="mt-8 text-l font-light leading-relaxed text-left">The SLP will be entirely withdraw whenever it is available. The scholar share will be entirely paid in SLP into his/her private Ronim wallet.<br/><br/>
+          For every additional month scholar stays in the team, they will get an additional 1%, until it gets to an additional of 5% in total. Which means that high performance scholars might reach up to 55% in SLP share.
+          </p>
       </div>
     </section>
     <SplitSection
@@ -94,12 +108,50 @@ const Index = () => (
         </div>
       }
       secondarySlot={
-        <div>
+          <div>
           {/* <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3> */}
           <p className="mt-8 text-xl font-light leading-relaxed">
             It is expected that new players in academy improve average daily SLP and arena rating every week.
             Below, you can see the averages, including the total SLP accumulated in the account:
           </p>
+          <br/>
+          <table>
+              <tr>
+                <th>Week</th>
+                <th>Avg Daily SLP</th>
+                <th>Total SLP</th>
+                <th>Arena MMR</th>
+                <th>SLP Share</th>
+              </tr>
+              <tr>
+                <td>Week1</td>
+                <td>100</td>
+                <td>700</td>
+                <td>1100 - 1299</td>
+                <td>35%</td>
+              </tr>
+              <tr>
+                <td>Week2</td>
+                <td>115</td>
+                <td>1505</td>
+                <td>1200 - 1299</td>
+                <td>35%</td>
+              </tr>
+              <tr>
+                <td>Week3</td>
+                <td>130</td>
+                <td>2415</td>
+                <td>1300 - 1500</td>
+                <td>35%</td>
+              </tr>
+              <tr>
+                <td>Week4</td>
+                <td>145</td>
+                <td>3430</td>
+                <td>1300 - 1500</td>
+                <td>35%</td>
+              </tr>
+            </table>
           <p className="mt-8 text-xl font-light leading-relaxed">
             SLP withdraw while in academy is in the end of the 4th week after you start playing with the axies. That makes easier for the academic and manager to check progression.
           </p>
@@ -140,10 +192,10 @@ const Index = () => (
     <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
       <h3 className="text-5xl font-semibold">Ready to apply to Evered?</h3>
       <p className="mt-8 text-xl font-light">
-        Click apply and be a part of our team
+        First step to become a professional gamer
       </p>
       <p className="mt-8">
-        <Button size="xl">Apply</Button>
+        <a href="https://forms.gle/fXjjTTcTKoRvfJty9" className='button button--link' target="_blank">Apply</a>
       </p>
     </section>
   </Layout>
